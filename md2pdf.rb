@@ -23,5 +23,5 @@ pdf_file = basename.sub_ext('.pdf').to_s
 delay_time = 25_000
 wkhtmltopdf_option = "--javascript-delay #{delay_time} --footer-center [page]"
 
-system "pandoc #{markdown_file} --mathjax -s -c #{style} -o #{html_file}"
+system "pandoc #{markdown_input_file} --mathjax -s -c #{style} -o #{html_file}"
 system "wkhtmltopdf #{wkhtmltopdf_option} #{html_file} #{pdf_file}"
