@@ -20,7 +20,7 @@ basename = Pathname(markdown_input_file)
 html_file = basename.sub_ext('.html').to_s
 pdf_file = basename.sub_ext('.pdf').to_s
 
-delay_time = 25_000
+delay_time = 30_000
 wkhtmltopdf_option = "--javascript-delay #{delay_time} --footer-center [page]"
 
 system "pandoc #{markdown_input_file} --mathjax -s -c #{style} -o #{html_file}"
