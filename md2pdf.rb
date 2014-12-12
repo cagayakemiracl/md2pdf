@@ -3,22 +3,20 @@
 require 'pathname'
 require 'optparse'
 
+this_dir = File.dirname Pathname.new(__FILE__).realpath
+defalut_style = File.expand_path 'github2.css', this_dir
+
 params = ARGV.getopts(
   '',
-  'css:github',
+  "css:#{defalut_style}",
   'input:not_found_file')
 
 exit 0 if params['input'] == 'not_found_file'
 
-this_dir = File.dirname Pathname.new(__FILE__).realpath
-if params['css'] == 'github'
-  style = File.expand_path 'github2.css', this_dir
-else
-  style = params['css']
-end
+markdown_input_file = params['input']
+style = params['css']
 
-markdown_file = params['input']
-basename = Pathname(markdown_file)
+basename = Pathname(markdown_input_file)
 html_file = basename.sub_ext('.html').to_s
 pdf_file = basename.sub_ext('.pdf').to_s
 
