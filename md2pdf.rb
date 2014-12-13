@@ -3,7 +3,8 @@
 require 'pathname'
 require 'optparse'
 
-defalut_style = 'https://gist.githubusercontent.com/andyferra/2554919/raw/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css'
+this_dir = File.dirname Pathname.new(__FILE__).realpath
+defalut_style = File.expand_path 'github.css', this_dir
 
 params = ARGV.getopts(
   '',
