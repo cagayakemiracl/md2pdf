@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="/Users/hiromasa/git/md2pdf/github.css">
+</head>
+<body>
+<h1 id="md2pdf">md2pdf</h1>
+<p>markdownファイルをpdfに変換するスクリプトです<br />スタイルシートはgithubのcssをベースに改造されたものを使っています<br /><a href="https://gist.githubusercontent.com/andyferra/2554919/raw/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css">andyferra/github.css</a></p>
+<h2 id="インストール">インストール</h2>
+<p>まず以下の物が必要です</p>
+<ul>
+<li>ruby</li>
+<li>pandoc</li>
+<li>wkhtmltopdf</li>
+</ul>
+<p>Macだとこれでインストールできます</p>
+<pre><code>brew install pandoc
+brew cask install wkhtmltopdf</code></pre>
+<h2 id="使い方">使い方</h2>
+<ul>
+<li>-i --input 変換するmarkdownファイル</li>
+<li>-c -css 使用するスタイルシート</li>
+</ul>
+<h4 id="例">例</h4>
+<p><code>md2pdf -i test.md</code><br /><code>md2pdf -i test.md -c mystyle.css</code></p>
+</body>
+</html>
