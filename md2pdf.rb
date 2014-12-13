@@ -3,8 +3,8 @@
 require 'pathname'
 require 'optparse'
 
-this_dir = File.dirname Pathname.new(__FILE__).realpath
-defalut_style = File.expand_path 'github2.css', this_dir
+# defalut_style = 'https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css'
+defalut_style = 'http://kevinburke.bitbucket.org/markdowncss/markdown.css'
 
 params = ARGV.getopts(
   '',
