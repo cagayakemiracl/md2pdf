@@ -3,8 +3,7 @@
 require 'pathname'
 require 'optparse'
 
-# defalut_style = 'https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css'
-defalut_style = 'http://kevinburke.bitbucket.org/markdowncss/markdown.css'
+defalut_style = 'https://gist.githubusercontent.com/andyferra/2554919/raw/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css'
 
 params = ARGV.getopts(
   '',

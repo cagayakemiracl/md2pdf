@@ -1,7 +1,7 @@
 # md2pdf
 markdownファイルをpdfに変換するスクリプトです  
 スタイルシートはgithubのcssをベースに改造されたものを使っています  
-[http://kevinburke.bitbucket.org/markdowncss/](http://kevinburke.bitbucket.org/markdowncss/)
+[andyferra/github.css](https://gist.githubusercontent.com/andyferra/2554919/raw/2e66cabdafe1c9a7f354aa2ebf5bc38265e638e5/github.css)
 
 ## インストール
 まず以下の物が必要です
